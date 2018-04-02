@@ -150,11 +150,21 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/assets/img/${restaurant.photograph}`);
+    return (`./assets/img/${restaurant.photograph}`);
   }
 
   /**
    * Map marker for a restaurant.
+   */
+
+
+  /*Custom icon
+   *   static mapMarkerForRestaurant(restaurant, map) {
+    const google = window.google;
+    const image = {
+      url: './assets/img/restaurant-icon.svg',
+      scaledSize: new google.maps.Size(50, 50)
+    };
    */
   static mapMarkerForRestaurant(restaurant, map) {
     const marker = new google.maps.Marker({

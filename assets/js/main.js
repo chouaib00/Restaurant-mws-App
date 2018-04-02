@@ -1,8 +1,8 @@
-let restaurants,
-  neighborhoods,
-  cuisines
-var map
-var markers = []
+let restaurants;
+let neighborhoods;
+let cuisines;
+let map;
+var markers = [];
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -157,6 +157,8 @@ createRestaurantHTML = (restaurant) => {
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
+  more.setAttribute('role', 'button');
+  more.setAttribute('aria-label', 'More info this Restaurant')
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
 
