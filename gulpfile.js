@@ -135,9 +135,9 @@ gulp.task('images', () => {
         // Compress, strip metadata, and rename original image
         rename: { suffix: '-xl' }
       }],
-      '*.png': {
-        width: '100%'
-      },
+      // '*.png': {
+      //   width: '100%'
+      // },
       '*': {
         width: '100%'
       }
