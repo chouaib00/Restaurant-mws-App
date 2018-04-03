@@ -20,6 +20,7 @@ const cacheFiles = [
 	'/assets/img/8.jpg',
 	'/assets/img/9.jpg',
 	'/assets/img/10.jpg',
+	'/assets/img/favicon.ico',
 	'https://fonts.googleapis.com/css?family=Lato:400i|Lobster'
 ]
 
