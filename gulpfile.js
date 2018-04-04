@@ -2,6 +2,7 @@
 
 // serve (serve dev and watch files)
 // serve:dist (serve build files)
+// lint (lint to js)
 // minify-js (js minify and sourcemaps)
 // minify-css (css minify and sourcemaps)
 // minify-html
@@ -103,7 +104,7 @@ gulp.task('minify-html', () => {
 
 // Lint Task
 gulp.task('lint', function() {
-  return gulp.src('js/*.js')
+  return gulp.src('./assets/js/*.js')
       .pipe(jshint())
       .pipe(jshint.reporter('default'));
 });
